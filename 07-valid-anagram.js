@@ -20,8 +20,14 @@ const isAnagram = (s, t) => {
         tLetters.splice(index, 1);
     }
 
-    return true;
+    return tLetters.length === 0 ? true : false;
 };
 
 console.log(isAnagram(input1a, input1b));
 console.log(isAnagram(input2a, input2b));
+
+// test for line 23 condition
+const input3a = 'anagram';
+const input3b = 'nagarama';
+
+console.log(isAnagram(input3a, input3b));
